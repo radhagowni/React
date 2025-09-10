@@ -1,0 +1,19 @@
+What is REACT ?
+ 
+* React is a open source JavaScript library but not a framework.
+* It was developed by the Facebook Software Engineer Jordan Walke.
+* Focus on building UI .
+* Rich ecosystem.
+
+
+HISTORY:
+
+> Latest version is 19.0.0 (dec 2024).
+> Initial release to the public was in July 2013.
+> First used in 2011.
+
+
+How does React work ?
+
+# Creates a Virtual DOM in memory. [Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.]
+# React only changes what needs to be changed.

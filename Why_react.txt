@@ -1,0 +1,7 @@
+WHY REACT ?
+
+* Huge community
+* Efficient UI updates
+* Component based architecture
+# Industry demand
+* Cross platform development

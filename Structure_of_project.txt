@@ -1,0 +1,20 @@
+Structure:
+
+*When we use Vite or Create react app,we usually get a starting project with 3 folders and files.
+
+FOLDERS:
+1.node-modules
+2.public
+3.src 
+
+FILES:
+i)package.json
+ii)package-lock.json
+iii).gitignore
+iv)vite.config.js
+v)index.html
+vi)eslint.config.js
+vii)App.jsx
+viii)main.jsx
+ix)REAdME.md
+x)App.css

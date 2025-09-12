@@ -1,0 +1,18 @@
+FEATURES :
+
+ 1)COMPONENT BASED ARCHITECTURE : consists of i)Sidenav ii)main content iii)header iv)footer
+---> components make it possible as resuable code like 
+     React                          Angular                    Vue
+      |                                |                        |
+    Article component             Article component          Article component
+
+2)React is declarative : Tell react what you want & react will build the actual UI.[react with react.library]
+  Imperative(opposite to declarative) : saying what we want step by step.
+
+3)React will handle efficiently updating & rendering of the components.
+
+4)DOM updates are handles gracefully in React.
+
+5)Seamlessly integrate react into any of your applications,Portion of your page or a complete page or even a entire application iteslf.
+
+6) Native for mobile applications.

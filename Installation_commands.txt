@@ -1,0 +1,15 @@
+INSTALLATION : [for macOs]
+
+=>You need node js and one text editor (Vs code) to run the react components.
+=>Download VS code from 
+=>Download nodejs from nodejs.org [use command brew install node in macOs].
+=>Then open the new terminal in vs code and follow the below commands:
+ 1)npm create vite@latest [your project name]
+ 2)Select a framework : react 
+ 3)Selecta variant : javascript from the given options.
+ 4)cd [your project name]
+ 5)npm install 
+ 6)npm run dev 
+
+ =>Finally you will be given local host ,just copy that and paste it on chrome.
+ 

@@ -1,0 +1,57 @@
+🗂️ FOLDERS:
+1.node-modules
+2.public
+3.src 
+
+1.node_modules:
+
+* Contains all the libraries and dependencies your project needs(Reactitself,Vite,etc)
+* You don't edit this folder directly -it's managed automatically when you run {npm install}.
+
+2.public :
+
+* Stores static files like images,icons,or index.html.
+* Anything inside public is served as it is(without processing by React).
+* Example :favicon ,logo,manifest files.
+
+3.src :
+
+* This is where you write your actual React code.
+* Contains components,styles,and app logic.
+* By default you see App.jsx/App.js,main.jsx/main.js and sometimes App.css.
+
+ 💫💫 Do you ever thought "WHY DO WE WORK WITH ONLY src FOLDER ? WHY NOT WITH OTHER FOLDERS? 
+  
+Because -
+1)Separation of concerns
+  * src = all your source code(React components,logic,styles)
+  * Other folders like public and node_modules are not meant to be changed frequently.
+
+2)Build process 
+  * When you run npm run build, tools like Vite/Webpack only look inside src to bundle your React app.
+  * Files in src go through processing (jsx -> js ,css modules,optimizations)
+  * Other folders are copied as they are.
+
+3)Maintainability
+  *Keeping all app logic in one place(src) makes the project organized and scalable.
+  *Imagine if code was scattered between public and root files ,it would become messy.
+
+4)Hot Reloading
+ *The dev server(Vite) watches the src folder for changes.
+ *Whenever you update a file inside src,it automatically refreshes the app.
+ *If you change outside src(like in public) ,you need a full reload.
+
+5)Best practice/convention
+ * By convention,React developers put all components,pages,hooks,services in src.
+ * public is only static files and node_modules is auto-generated,so you don't touch it.
+  
+
+# If you put JS/JSX in public,Vite/Webpack won't compile it,React features won't work.
+# If you modify node_modules,changes will be lost when reinstalling dependencies.
+# Root files like vite.config.js are project level settings ,not where app logic belongs.
+
+
+👉 Inshort:
+ 
+We use src because it's the only folder compiled,optimised,and watched by React's bundler.
+Other folders are supporting roles. 

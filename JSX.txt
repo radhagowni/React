@@ -1,0 +1,23 @@
+JSX:
+
+* JSX = JavaScript + XML
+* It is a syntax extension for JavaScript that lets us write HTML-like code inside JavaScript.
+* Instead of using React.createElement(),we can write code that looks like HTML,but it actually compiles into JavaScript.
+* We need JSX in React:
+  1)Readability and easy to write
+  2)Combines UI + Logic
+  3)Transpilation
+  4)Debugging 
+* Key rules :
+  1)Return one parent element 
+  2)Use camelCase for attributes
+  3)Js expressions go inside { }
+* JSX tags have a tag name,attributes and children
+
+Example:
+
+// with JSX
+const element=<h1>Hello,React!</h1>;
+
+//without JSX
+const element=React.createElement("h1",null,"hello,React!");

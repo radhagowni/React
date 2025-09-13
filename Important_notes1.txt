@@ -1,0 +1,34 @@
+👉 DEFINITIONS :
+
+UI : bridge b/t user and machine. OR UI is everything you see &use to communicate with software/hardware.
+    types: GUI, CLI ,VUI ,touch based UI.
+    Simply....simple,clear,responsive,consistent,accessible,visually appealing. 
+    A part of the computer system,applications or device that allows a user to interact with it. 
+
+
+DEPENDENCIES : External libraries/packages that your project needs inorder to work.
+    Types: 1)Dependencies    -->needed to run your app in production.
+           2)DevDependencies -->only during development not in production.
+    Why : 1)save time ,add functionality,keep projects modular & maintainable. 
+
+
+SCRIPTS : Custom commands you define in the package.json that help you run ,build,test. 
+
+
+npx :tools come with npm[node package manager] used to execute node.js package directly without installing them globally.
+   npm :install package
+   npx :runs package 
+
+
+React itself : a smartphone with just the core OS.
+React ecosystem : all the apps,accesories,charges,cases. 
+
+
+Rich in ecosystem : high community + tools + libraries + framework + practices to make it easier &more powerful. 
+
+
+Important💫💫:
+# It is not mandatory to start a component with pascal case but good practice.
+# while importing it should be function name but from file [import Greet(func name) from './components/Hello[file name].jsx]
+# It's better to use .jsx extension because it works well for the component which consists of JavaScript&html code.
+# If the file consists of only JavaScript then go with .js.

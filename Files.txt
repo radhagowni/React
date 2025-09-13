@@ -1,0 +1,65 @@
+📄 FILES :
+
+i)package.json
+ii)package-lock.json
+iii).gitignore
+iv)vite.config.js
+v)index.html
+vi)eslint.config.js
+vii)App.jsx
+viii)main.jsx
+ix)REAdME.md
+x)App.css
+
+i)package.json 
+  • The heart of the project.
+  • Lists project metadata,dependencies,scripts(npm  run dev ,npm run build,etc)
+  • Why we need it?
+    > projects details -- name,versions,description
+    > Dependencies -- lists all libraries needed
+    > Scripts -- shortcuts to run tasks(like npm run dev)
+    > Compatability--ensures your project can be installed and run anywhere with same setup.
+
+ii)package-lock.json
+  • Keeps exact versions of dependencies(so your project works the same everywhere).
+  • Auto generated when you run npm install.
+  • Why we need it?
+    •Ensures the app runs the same on every machine.(avoids "works on my computer)
+    •helps npm install packages faster,since it already knows the dependency tree.
+
+iii).gitignore
+  • Tells git which files/folders to ignore (like node_modules).
+
+iv)vite.config.js
+  • Configuration file for the bundler(Vite or webpack)
+  • Controls how your project is built,optimised ,etc.
+
+v)index.html
+  • Inside the public folder.
+  • The single HTML page that react injects into.
+  • It contains a root<div id='root'></div>
+  • Why we need it? -- without this file,there is no base webpage for React to render onto.
+
+vi)main.jsx
+  • Entry point for react.
+  • It connects your App component to the index.html root div.
+
+vii)App.jsx
+  • The first component of your react app.
+  • Think of it as the homepage of the project.
+
+viii)App.css
+  • Styles for the default App component.
+
+ix)eslint.config.js
+  • This file is for ESLint,a tool that checks your code for errors,bugs,or style issues.
+  • We need it because it keeps code clean and consistent(avoids unused variables,missing semicolons.)
+  • Catches potential bugs early(using a variables before declaring it).
+  • Ensures your project follows best practices and coding standards.
+
+x)REAdME.md
+  • A markdown file(text+formatting) that describes your project.
+  • Why we need it?
+     • Acts like a user guide -> explains what the project is, how to install and run it. 
+     • Useful when sharing your project on Github or with recruiters.
+  

@@ -1,0 +1,10 @@
+PROPS:
+1)props stands for properties.And immutable.
+2)They are like function arguments but for React components.
+3)They allow you to pass data from a parent component to a child component.
+4)Here App.jsx is parent component and other file like Greet.jsx is child component. 
+5)Props are read-only(you cannot modify them inside the child).
+6)these make components resuable by changing the data passed in.
+7)You can pass any type of data:string,number,array,object,even function.
+8)simply, props:input data for components(like argumentsfor functions) 
+9)Props get passsed to the component.function parameters.

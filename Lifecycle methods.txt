@@ -1,0 +1,104 @@
+LIFECYCLE METHODS IN REACT :
+
+There are 4 phases.They are :
+
+1) Mounting
+2) Updating
+3) Unmounting
+4) Error handling
+
+1) MOUNTING 
+
+ ✧ Mounting method is called when an instance of a component is being created and inserted into the DOM.
+ ✧ It has four methods,namely 
+   a) constructor()
+   b) static getDevrivedStateFromProps()
+   c) render()
+   d) componentDidMount()
+
+ a)constructor()
+ ✧ A special function that will get called whenever a new component is created.
+ ✧ It is used for initializing state & binding the event handler to the class instance.
+ ✧ Do not cause side effects ..example never make HTTP requests within a constructor.
+ ✧ When we are creating our constructor ,we have to call a special function called super(this will call base constructor).
+ ✧ We have access to this.props only after passing props as parameters.
+ ✧ constructor is the only place where we can set state.
+
+ b)static getDevrivedStateFromProps(props,states)
+ ✧ It is used when the state of the component depends on changes in props overtime.
+ ✧ It is static method ,it doesn't have access to this keyword.
+ ✧ If the state of the component depends on the props being passed to the component then you can use this to set the state.
+ ✧ This simply return an object that represents the new state of the component.
+ ✧ Do not cause side effects..like fetching data from an endpoint.
+
+ c)render()
+ ✧ Only required method in a class component.
+ ✧ Just read props and this.state and return jsx.
+ ✧ Do not change state or interact with DOM or make ajax calls.
+ ✧ Children lifecycle methods are also executed after parent is rendered.
+
+  d) componentDidMount()
+ ✧ It will called only once in the whole lifecycle of a component.
+ ✧ It is invoked immediately after a component and all its Children components have been rendered to the DOM.
+ ✧ Can cause side effects..like interact with DOM or perform any ajax calls to load data.
+
+
+ 2) UPDATING
+
+ ✧ Updating is called when a component is being re-rendered as a result of changes to either its props or state.
+ ✧ It has five methods,namely 
+   a) static getDevrivedStateFromProps()
+   b) shouldcomponentUpdate()
+   c) render()
+   d) getSnapshotBeforeUpdate()
+   e) componentDidUpdate()
+
+a) static getDevrivedStateFromProps()
+ ✧ Receives props,state as parameters and return either null or an object that represents the Updated state of the component.
+ ✧ Method is called everytime a component is re-rendered.
+
+b) shouldcomponentUpdate()
+ ✧ Receives the updated props & states.
+ ✧ Purpose is clear from its name,it dictates if at all the component should rerender or not,by default all class components will rerender whenever props they receive or their state changes.
+ ✧ This method can prevent that default behaviour by returning false.
+ ✧ Compares props & state with next props & next state value & return true/false to let react know whether component should update or not.
+ ✧ Basically used for performance optimization.
+ ✧ Avoid causing side effects like HTTP requests & calling setState.
+
+c) render()
+ ✧ Only required method in a class component.
+ ✧ Just read props and this.state and return jsx.
+ ✧ Do not change state or interact with DOM or make ajax calls.
+ ✧ Children lifecycle methods are also executed after parent is rendered.
+
+ d) getSnapshotBeforeUpdate(previous props, previous state)
+ ✧ Receives previous props and previous state as parameters and it is called right before the changes from the virtual DOM are to be reflected in the DOM.
+ ✧ It is to capture some information from the DOM.
+ ✧ It either returns null or return a value.
+ ✧ Returned value will be passed as the 3rd parameters to next method.
+
+ e) componentDidUpdate()
+ ✧ It will be called after the render is finished in the rerender cycles.
+ ✧ Accepts 3 parameters like previous props,snapshot,previous state.
+ ✧ Can cause side effects.
+
+
+3) UNMOUNTING 
+
+ ✧ It is called when a component is being removed from the DOM.
+ ✧ It has only one method,namely componentWillUnmount()
+    
+a)componentWillUnmount()
+ ✧ It is invoked immediately before a component is unmounted and destroyed.
+ ✧ You can perform some cleanup tasks like cancelling any network requests, removing event handlers,cancelling any subscriptions and also invalidating timers.
+ ✧ Do not call setState method.
+
+
+ 4)ERROR HANDLING 
+
+ ✧ It is called when there is an error during rendering, in a cycle method or in the constructor of any child component.
+ ✧ It has two methods,namely 
+   a) static getDevrivedStateFromProps()
+   b) componentDidCatch()
+
+ 

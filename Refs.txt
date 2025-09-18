@@ -1,0 +1,68 @@
+❖ Refs:
+
+* Refs, short for references.
+* It provides a way to directly access and interact with DOM elements or React elements created in the render method.
+* Normally ,in React we control everything through state and props.
+* But sometimes we need to directly touch the DOM (like focusing an input,playing a video,measuring an element's size).
+* That's where Refs comes into picture.
+
+
+❖ How to create Refs :
+* We use useRef in functional components :
+
+import { useRef } from "react";
+
+function App() {
+  const inputRef = useRef(null);
+
+  const focusInput = () => {
+    inputRef.current.focus(); // directly access DOM node
+  };
+
+  return (
+    <div>
+      <input ref={inputRef} type="text" />
+      <button onClick={focusInput}>Focus Input</button>
+    </div>
+  );
+}
+
+Here:
+
+* useRef(null) creates a ref.
+* ref={inputRef} attaches it to the input element.
+* inputRef.current points to the actual DOM element.
+
+
+❖ CLASS COMPONENT EXAMPLE :
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.inputRef = React.createRef();
+  }
+
+  focusInput = () => {
+    this.inputRef.current.focus();
+  };
+
+  render() {
+    return (
+      <div>
+        <input ref={this.inputRef} type="text" />
+        <button onClick={this.focusInput}>Focus Input</button>
+      </div>
+    );
+  }
+}
+
+
+❖ Why do we need Refs?
+
+1)Accessing DOM elements
+ > Focus,text selection,play/pause media.
+2)Storing values without re-Rendering
+ > Unlike useState,changing ref,current does not cause a re-render.
+ > Example:Storing a timer ID.
+3)Integrating with third party libraries.
+ > Some libraries need direct DOM access (like charts,animations).

@@ -1,0 +1,31 @@
+COMPONENT :
+--> In react ,a component represents a part of the user interface.
+-->Our application consists of 5 parts ( 4 mentioned above) and last one is to contain every other component[Root/App component]
+-->The  4 nested components describe only a part of UI and all come together to make up entire app.
+-->components are resuable.same component can be used with different properties to display different information.
+--> COMPONENT is basically the code in .js file & placed in js file.
+
+-->Types:
+     1)Stateless functional component                          2)Stateful class component
+* js functions[return html which describes UI]           * class extending component class
+* Absence of this keyword.                               * complex UI logic.& more  feature rich.
+* Solution without using state.                          * Provide lifecycle hooks.& maintain their own private data(state).
+* A.k.a Stateless/dumb/presentational                    * Rendering method returning html       
+* ex: function welcome(props){                           * class welcome extends React
+       return <h1> hello,(props.name)</h1>;              * component{ render(){ return <h1>hello,{this.props.name}</h1>}}
+      }                                                  * A.k.a Stateful/smart/container
+                                                   
+-->COMPONENTS are building blocks & App component can have 100/1000 of components in it.
+
+FUNCTIONAL COMPONENTS:
+1)They are just js functions.Optionally receive an object of properties which is referred to as props &return html which describes the UI.
+     props ➡️ js function ➡️ HTML (jsx)
+
+CLASS COMPONENTS:
+1)CC are basically ES6 classes similar to FC.[structure same ]
+2)Apart from props ,CC can also maintain a private internal state,in simpler words it can maintain some information which is private to that component& use that informationto describe UI.
+        props ➡️ js function(state) ➡️ HTML (jsx)
+                 
+
+
+

@@ -1,0 +1,27 @@
+BASIC commands to be used in Vs code:
+ 
+For MacOs,
+command + A -- select the entire cell
+command + C -- copy the content
+command + V -- paste the copied text
+command + S -- save all the changes
+
+ In React :
+
+ rafc   - reactArrowFunctionComponent
+ rafce  - reactArrowFunctionExportComponent
+ rafcp  - reactArrowFunctionComponentWithPropTypes
+ rnpc   - reactNativePureComponent
+ rnpce  - reactNativePureComponentExport
+ rcc    - reactClassComponent
+ rccp   - reactClassComponentPropTypes
+ rce    - reactClassExportComponent
+ rcep   - reactClassExportComponentWithPropTypes
+ rconst - classConstructor
+ rfc    - reactFunctionalComponent
+ rfcp   - reactFunctionalComponentPropTypes
+ rfce   - reactFunctionalExportComponent
+ 
+
+
+

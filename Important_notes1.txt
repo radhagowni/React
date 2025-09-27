@@ -1,3 +1,4 @@
+# information to know before we proceed
 👉 DEFINITIONS :
 
 UI : bridge b/t user and machine. OR UI is everything you see &use to communicate with software/hardware.

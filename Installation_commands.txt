@@ -1,3 +1,4 @@
+# we can run react components using vite or create react app as well.
 INSTALLATION : [for macOs]
 
 =>You need node js and one text editor (Vs code) to run the react components.

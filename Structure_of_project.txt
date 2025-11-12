@@ -1,3 +1,4 @@
+*** about the structure of the folder ***
 Structure:
 
 *When we use Vite or Create react app,we usually get a starting project with 3 folders and files.

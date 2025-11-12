@@ -1,4 +1,4 @@
-PROPS:
+# PROPS:
 1)props stands for properties and  props are immutable.
 2)They are like function arguments but for React components.
 3)They allow you to pass data from a parent component to a child component.

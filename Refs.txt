@@ -35,6 +35,7 @@ Here:
 
 
 ❖ CLASS COMPONENT EXAMPLE :
+----------------------------
 
 class App extends React.Component {
   constructor(props) {

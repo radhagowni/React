@@ -1,5 +1,5 @@
 STATE :
-# Same as props.
+# Same as props(properties).
 # It is possible to influence what is rendered on the screen using props & second way is state.
 # state is managed within the component. variables declared in function body.
 # state can be changed.mutable.

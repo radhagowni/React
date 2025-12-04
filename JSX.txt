@@ -4,7 +4,7 @@ JSX:
 * It is a syntax extension for JavaScript that lets us write HTML-like code inside JavaScript.
 * Instead of using React.createElement(),we can write code that looks like HTML,but it actually compiles into JavaScript.
 * We need JSX in React:
-  1)Readability and easy to write
+  1) Readability and easy to write
   2)Combines UI + Logic
   3)Transpilation
   4)Debugging 

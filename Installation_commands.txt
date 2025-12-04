@@ -1,7 +1,7 @@
 # we can run react components using vite or create react app as well.
 INSTALLATION : [for macOs]
 
-=>You need node js and one text editor (Vs code) to run the react components.
+=> You need node js and one text editor (Vs code) to run the react components.
 =>Download VS code from 
 =>Download nodejs from nodejs.org [use command brew install node in macOs].
 =>Then open the new terminal in vs code and follow the below commands:

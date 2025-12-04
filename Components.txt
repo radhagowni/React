@@ -1,4 +1,5 @@
 COMPONENT :
+
 --> In react ,a component represents a part of the user interface.
 -->Our application consists of 5 parts ( 4 mentioned above) and last one is to contain every other component[Root/App component]
 -->The  4 nested components describe only a part of UI and all come together to make up entire app.

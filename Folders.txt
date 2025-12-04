@@ -1,4 +1,4 @@
-🗂️ FOLDERS:
+🗂️ FOLDERS :
 1.node-modules
 2.public
 3.src 

@@ -28,7 +28,7 @@ React ecosystem : all the apps,accesories,charges,cases.
 Rich in ecosystem : high community + tools + libraries + framework + practices to make it easier &more powerful. 
 
 
-Important💫💫:
+Important💫💫 :
 # It is not mandatory to start a component with pascal case but good practice.
 # while importing it should be function name but from file [import Greet(func name) from './components/Hello[file name].jsx]
 # It's better to use .jsx extension because it works well for the component which consists of JavaScript&html code.
